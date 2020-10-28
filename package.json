@@ -1,7 +1,7 @@
 {
-  "name": "calcul",
+  "name": "calculator-solidity",
   "version": "1.0.0",
-  "description": "''",
+  "description": "various basics operations",
   "main": "index.js",
   "author": "vladime88 <vladime@gmail.com>",
   "license": "MIT",

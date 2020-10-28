@@ -7,8 +7,9 @@ const Adder = contract.fromArtifact('Adder');
 const Suber = contract.fromArtifact('Suber');
 const Multiplier = contract.fromArtifact('Multiplier');
 const Divisor = contract.fromArtifact('Divisor');
+// const Calculator = contract.fromArtifact('Calculator');
 
-describe('Adder', () => {
+describe('Calculator', () => {
   beforeEach(async function () {
     this.adder = await Adder.new();
   });
@@ -16,9 +17,7 @@ describe('Adder', () => {
   it('add numbers', async function () {
     expect(await this.adder.add(1, 1)).to.be.bignumber.equal(new BN(2));
   });
-});
 
-describe('Suber', () => {
   beforeEach(async function () {
     this.suber = await Suber.new();
   });
@@ -29,13 +28,11 @@ describe('Suber', () => {
 
   it('reverts when nb1 < nb2', async function () {
     await expectRevert(
-      this.suber.sub(98, 199),
+      this.suber.sub(98, 122),
       'Suber: no negative value here.',
     );
   });
-});
 
-describe('Multiplier', () => {
   beforeEach(async function () {
     this.multiplier = await Multiplier.new();
   });
@@ -43,9 +40,7 @@ describe('Multiplier', () => {
   it('multiply numbers nb1 by nb2', async function () {
     expect(await this.multiplier.mul(8, 8)).to.be.bignumber.equal(new BN(64));
   });
-});
 
-describe('Divisor', () => {
   beforeEach(async function () {
     this.divisor = await Divisor.new();
   });

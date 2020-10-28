@@ -6,3 +6,4 @@ contract Multiplier {
         return nb1 * nb2;
     }
 }
+
