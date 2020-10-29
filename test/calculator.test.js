@@ -7,51 +7,48 @@ const Adder = contract.fromArtifact('Adder');
 const Suber = contract.fromArtifact('Suber');
 const Multiplier = contract.fromArtifact('Multiplier');
 const Divisor = contract.fromArtifact('Divisor');
-// const Calculator = contract.fromArtifact('Calculator');
+const Calculator = contract.fromArtifact('Calculator');
 
 describe('Calculator', () => {
   beforeEach(async function () {
     this.adder = await Adder.new();
+    this.suber = await Suber.new();
+    this.multiplier = await Multiplier.new();
+    this.divisor = await Divisor.new();
+    this.calculator = await Calculator.new(
+      this.adder.address,
+      this.suber.address,
+      this.multiplier.address,
+      this.divisor.address,
+    );
   });
 
   it('add numbers', async function () {
-    expect(await this.adder.add(1, 1)).to.be.bignumber.equal(new BN(2));
-  });
-
-  beforeEach(async function () {
-    this.suber = await Suber.new();
+    expect(await this.calculator.add(1, 1)).to.be.bignumber.equal(new BN(2));
   });
 
   it('substract numbers nb1 - nb2', async function () {
-    expect(await this.suber.sub(100, 98)).to.be.bignumber.equal(new BN(2));
+    expect(await this.calculator.sub(100, 98)).to.be.bignumber.equal(new BN(2));
   });
 
   it('reverts when nb1 < nb2', async function () {
     await expectRevert(
-      this.suber.sub(98, 122),
+      this.calculator.sub(98, 122),
       'Suber: no negative value here.',
     );
   });
 
-  beforeEach(async function () {
-    this.multiplier = await Multiplier.new();
-  });
-
   it('multiply numbers nb1 by nb2', async function () {
-    expect(await this.multiplier.mul(8, 8)).to.be.bignumber.equal(new BN(64));
-  });
-
-  beforeEach(async function () {
-    this.divisor = await Divisor.new();
+    expect(await this.calculator.mul(8, 8)).to.be.bignumber.equal(new BN(64));
   });
 
   it('Divid nb1 by nb2', async function () {
-    expect(await this.divisor.div(45, 5)).to.be.bignumber.equal(new BN(9));
+    expect(await this.calculator.div(45, 5)).to.be.bignumber.equal(new BN(9));
   });
 
   it('reverts when nb2 <= 0', async function () {
     await expectRevert(
-      this.divisor.div(55, 0),
+      this.calculator.div(55, 0),
       'Divisor: can not divide by 0',
     );
   });

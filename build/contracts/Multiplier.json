@@ -26,13 +26,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"mul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":\"Multiplier\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":{\"keccak256\":\"0xa440ec9fb71d5827b775a467b1a58072dbfecd01f903a1a255064c89d56470fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3ab667aaee92680c760833f62523e6ec1d3192a0f72b5b5753c4e5bb52e67c73\",\"dweb:/ipfs/QmVdXmK6b4Ld64ZWkZegKLGR8z2F68fWjcXQ9ZcXuq1niN\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5060b98061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c8a4ac9c14602d575b600080fd5b606060048036036040811015604157600080fd5b8101908080359060200190929190803590602001909291905050506076565b6040518082815260200191505060405180910390f35b600081830290509291505056fea264697066735822122007a67193506164c0a18ca4d7f1ddeeb9bfb052331d6ec5d747db760e7eaa2c1464736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c8a4ac9c14602d575b600080fd5b606060048036036040811015604157600080fd5b8101908080359060200190929190803590602001909291905050506076565b6040518082815260200191505060405180910390f35b600081830290509291505056fea264697066735822122007a67193506164c0a18ca4d7f1ddeeb9bfb052331d6ec5d747db760e7eaa2c1464736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"mul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":\"Multiplier\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":{\"keccak256\":\"0xcdc65c2dd167fb2a9154add9975f5a3a55efacda46a4de785b57fe5b99c90bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad19fb1370f89c1dd88834a4abe868e9156cf082fad9aa277b94bd914a57d181\",\"dweb:/ipfs/QmfBHUypyrT6NGrCLimHf27CPFShepnx2R9ufNGA46PUFJ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060b98061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063c8a4ac9c14602d575b600080fd5b606060048036036040811015604157600080fd5b8101908080359060200190929190803590602001909291905050506076565b6040518082815260200191505060405180910390f35b600081830290509291505056fea2646970667358221220643d29854c2d03740531e45cfc47ebbd78d17a7c2c9360f806624514401afc4e64736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063c8a4ac9c14602d575b600080fd5b606060048036036040811015604157600080fd5b8101908080359060200190929190803590602001909291905050506076565b6040518082815260200191505060405180910390f35b600081830290509291505056fea2646970667358221220643d29854c2d03740531e45cfc47ebbd78d17a7c2c9360f806624514401afc4e64736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "57:130:4:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "57:130:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;83:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;143:7;175:3;169;:9;162:16;;83:102;;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ncontract Multiplier {\n    function mul(uint256 nb1, uint256 nb2) public pure returns (uint256) {\n        return nb1 * nb2;\n    }\n}\n",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.6.0;\n\ncontract Multiplier {\n    function mul(uint256 nb1, uint256 nb2) public pure returns (uint256) {\n        return nb1 * nb2;\n    }\n}\n\n",
   "sourcePath": "/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol",
   "ast": {
     "absolutePath": "/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol",
@@ -247,7 +247,7 @@
         "src": "57:130:4"
       }
     ],
-    "src": "32:156:4"
+    "src": "32:157:4"
   },
   "legacyAST": {
     "absolutePath": "/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol",
@@ -462,7 +462,7 @@
         "src": "57:130:4"
       }
     ],
-    "src": "32:156:4"
+    "src": "32:157:4"
   },
   "compiler": {
     "name": "solc",
@@ -470,7 +470,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.1",
-  "updatedAt": "2020-10-28T11:48:04.833Z",
+  "updatedAt": "2020-10-29T10:23:06.798Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

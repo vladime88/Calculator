@@ -29,7 +29,7 @@ describe('Suber', () => {
 
   it('reverts when nb1 < nb2', async function () {
     await expectRevert(
-      this.suber.sub(98, 199),
+      this.suber.sub(98, 122),
       'Suber: no negative value here.',
     );
   });
