@@ -49,7 +49,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -73,7 +74,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -97,7 +99,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -121,7 +124,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_adderContract\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_suberContract\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_multiplierContract\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_divisorContract\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"add\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"div\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"mul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"sub\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Calculator.sol\":\"Calculator\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Adder.sol\":{\"keccak256\":\"0x0009a63ab3295d16a8a19741d4af3a6494eefbf76de0cde1c0bfada97a0797cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1e8d4c674fd98fbddbc6c417e029c26bd42a9491c85394e61a1958e2d2d342bc\",\"dweb:/ipfs/QmTR33hubGQ4FCDaChJCzThHdWFeM3T5qiLvyBgf5ejcBB\"]},\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Calculator.sol\":{\"keccak256\":\"0xaa27c59c53a0a036688a69cfab6f0d6efdf46198808d261da45fd5cb325fe77d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f9cf72466addd15db39ebb3366606cbf2d42a8fa6027789044f150e3cca3df0\",\"dweb:/ipfs/QmX3GvMEoagTRvybqJqE1h2CCcXGuyAzo8k7yMfzUPUpBa\"]},\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Divisor.sol\":{\"keccak256\":\"0xcf5168db935cec7998f5c0bef2b1bca05f5bb19af541df79226f5c6d1c6937cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://472084ab8b17e57ceeb97108fccb8f2856b56f84e926a7fa34641819d3b4ed5c\",\"dweb:/ipfs/QmZyqtb4Sh2biyELNy2y8rVmPNSiyb3k2o9A3jZiZkV6nY\"]},\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":{\"keccak256\":\"0xcdc65c2dd167fb2a9154add9975f5a3a55efacda46a4de785b57fe5b99c90bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad19fb1370f89c1dd88834a4abe868e9156cf082fad9aa277b94bd914a57d181\",\"dweb:/ipfs/QmfBHUypyrT6NGrCLimHf27CPFShepnx2R9ufNGA46PUFJ\"]},\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Suber.sol\":{\"keccak256\":\"0x4b42e7217350c7374afad87e6add0591b02f43da93d2178382f98411ee092b17\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5c6a4f2ee722a1d7cac71c428d62cd995c19e7a330068f44219b041096def850\",\"dweb:/ipfs/QmPi3W6G8qSQeKjMGLFoF573XHyTw8h3CA3BMxq4EtcEmR\"]}},\"version\":1}",
@@ -3196,9 +3200,17 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Linux.g++"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x790602BcfDb4b3DF0C376592EfbA9Cd613e1Cb35",
+      "transactionHash": "0x15d7b00dcc2a79e9360c991ca45c376da4d0461bdfb606ba70de4459e3eaf201"
+    }
+  },
   "schemaVersion": "3.3.1",
-  "updatedAt": "2020-10-29T10:23:06.795Z",
+  "updatedAt": "2020-10-30T13:16:15.439Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

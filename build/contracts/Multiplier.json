@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"mul\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":\"Multiplier\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Multiplier.sol\":{\"keccak256\":\"0xcdc65c2dd167fb2a9154add9975f5a3a55efacda46a4de785b57fe5b99c90bad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ad19fb1370f89c1dd88834a4abe868e9156cf082fad9aa277b94bd914a57d181\",\"dweb:/ipfs/QmfBHUypyrT6NGrCLimHf27CPFShepnx2R9ufNGA46PUFJ\"]}},\"version\":1}",
@@ -468,9 +469,17 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Linux.g++"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x4D4Bf6f05B660c54E71856Ce0Fd457784A2bbc2e",
+      "transactionHash": "0x3b697aed98ecc1677e0c56e1954460f70c2861ceec1ddb3b35205984d9662288"
+    }
+  },
   "schemaVersion": "3.3.1",
-  "updatedAt": "2020-10-29T10:23:06.798Z",
+  "updatedAt": "2020-10-30T13:16:15.437Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

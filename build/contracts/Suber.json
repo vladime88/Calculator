@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nb1\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"nb2\",\"type\":\"uint256\"}],\"name\":\"sub\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Suber.sol\":\"Suber\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/vladime/Documents/ALYRA/Calculator/contracts/Suber.sol\":{\"keccak256\":\"0x4b42e7217350c7374afad87e6add0591b02f43da93d2178382f98411ee092b17\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5c6a4f2ee722a1d7cac71c428d62cd995c19e7a330068f44219b041096def850\",\"dweb:/ipfs/QmPi3W6G8qSQeKjMGLFoF573XHyTw8h3CA3BMxq4EtcEmR\"]}},\"version\":1}",
@@ -692,9 +693,17 @@
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Linux.g++"
   },
-  "networks": {},
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xd526FCc9C7871275728D73a97B754e1A1e67bf7A",
+      "transactionHash": "0xc8a1329da9e16ca12ff0d197f8e878a90c52a5c07ef60f3f75a1fa38076f26ee"
+    }
+  },
   "schemaVersion": "3.3.1",
-  "updatedAt": "2020-10-28T11:48:04.833Z",
+  "updatedAt": "2020-10-30T13:16:15.436Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
